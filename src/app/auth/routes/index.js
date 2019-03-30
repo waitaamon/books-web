@@ -4,7 +4,7 @@ export default [
   {
     path: '/login',
     component: LoginPage,
-    name: 'login-page',
+    name: 'login',
     meta: {
       guest: true,
       needsAuth: false

@@ -1,29 +1,10 @@
 <template>
-    <p>am here!!</p>
+    <p>Home page</p>
 </template>
 
 <script>
-  import { mapActions, mapGetters } from 'vuex'
-  export default {
-    name: 'home-page',
-    data () {
-      return {
-
-      }
-    },
-    computed: {
-      ...mapGetters({
-        errors: 'getValidationErrors'
-      })
-    },
-    methods: {
-      ...mapActions({
-
-      })
-    }
-  }
+export default {
+    name: 'home-page'
+}
 </script>
 
-<style scoped>
-
-</style>

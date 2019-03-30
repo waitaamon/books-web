@@ -13,10 +13,10 @@
                         class="elevation-1"
                 >
                     <template v-slot:items="props">
-                        <td>{{ props.item.text }}</td>
-                        <td class="text-xs-right">{{ props.item.author }}</td>
-                        <td class="text-xs-right">{{ props.item.publisher }}</td>
-                        <td class="text-xs-right">{{ props.item.is_live }}</td>
+                        <td>{{ props.item.title }}</td>
+                        <td class="text-xs-left">{{ props.item.author }}</td>
+                        <td class="text-xs-left">{{ props.item.publisher }}</td>
+                        <td class="text-xs-left">{{ props.item.is_live === 1 ? 'is live' : 'not live'  }}</td>
                     </template>
                 </v-data-table>
             </v-flex>

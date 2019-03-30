@@ -10,9 +10,6 @@ export const setLoading = ({ commit }, trueOrFalse) => {
     commit('setLoading', trueOrFalse)
 }
 
-export const getRegistrationDetails = ({ commit }) => {
-    window.axios.get('registration-details')
-        .then(response => {
-            commit('setRegistrationDetails', response.data)
-        })
+export const setSnackBar = ({ commit }, payload) => {
+    commit('setSnackBar', payload)
 }

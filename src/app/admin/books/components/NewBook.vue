@@ -149,6 +149,7 @@
         getGenres: 'genre/getGenres',
         getTopics: 'topic/getTopics',
         addBook: 'book/addBook',
+        snackbar: 'snackbar'
       }),
       submit () {
         this.$v.$touch()
@@ -156,10 +157,19 @@
           this.submitStatus = 'ERROR'
         } else {
           this.addBook({
-            email: this.email,
-            password: this.password
+            title: this.title,
+            author: this.author,
+            publisher: this.publisher,
+            language: this.language,
+            genre: this.genre,
+            topic: this.topic,
           }).then(() => {
-            this.$router.push({name: 'dashboard'})
+            this.snackbar({
+              status: true,
+              color: 'success',
+              text: 'Successfully created a new book'
+            })
+            this.$router.push({name: 'books'})
           })
         }
       }

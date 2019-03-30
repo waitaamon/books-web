@@ -1,4 +1,4 @@
-import {HomePage, BookPage} from '../components'
+import { HomePage } from '../components'
 
 
 export default [
@@ -6,16 +6,6 @@ export default [
     path: '/',
     component: HomePage,
     name: 'home-page',
-    meta: {
-      guest: true,
-      needsAuth: false
-    }
-  },
-  
-  {
-    path: '/book/:slug',
-    component: BookPage,
-    name: 'book-page',
     meta: {
       guest: true,
       needsAuth: false

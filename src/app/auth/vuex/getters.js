@@ -1,5 +1,3 @@
-export const user = (state) => {
+export const user = (state) => state.user
 
-    return state.user
-
-}
+export const authenticated = (state) => state.user.authenticated

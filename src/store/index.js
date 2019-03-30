@@ -7,6 +7,7 @@ import book from '../app/admin/books/vuex'
 import language from '../app/admin/languages/vuex'
 import genre from '../app/admin/genres/vuex'
 import topic from '../app/admin/topics/vuex'
+import image from '../app/admin/gallery/vuex'
 
 import state from './state'
 import * as mutations from './mutations'
@@ -26,6 +27,7 @@ export default new Vuex.Store({
       book,
       language,
       genre,
-      topic
+      topic,
+      image
     }
 })

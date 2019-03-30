@@ -60,10 +60,10 @@ export const checkTokenExists = () => {
 
 export const fetchUser = ( { commit }) => {
 
-    return window.axios.get('/api/me').then((response) => {
-
+    return window.axios.get('/api/me').then(response => {
+        
         commit('setAuthenticated', true)
-        commit('setUserData', response.data.data)
+        commit('setUserData', response.data)
     })
 }
 

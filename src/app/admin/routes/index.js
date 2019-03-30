@@ -1,5 +1,6 @@
 import { DashboardPage } from '../dashboard/components'
 import { Books, NewBooks } from '../books/components'
+import { Gallery } from '../gallery/components'
 
 export default [
   {
@@ -24,6 +25,15 @@ export default [
     path: '/new-book',
     component: NewBooks,
     name: 'new-book',
+    meta: {
+      guest: false,
+      needsAuth: true
+    }
+  },
+  {
+    path: '/gallery',
+    component: Gallery,
+    name: 'gallery',
     meta: {
       guest: false,
       needsAuth: true

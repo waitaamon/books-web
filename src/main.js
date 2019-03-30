@@ -1,5 +1,6 @@
 require('./bootstrap')
 require('./interceptors')
+import './plugins/base'
 import router from './router'
 import store from './store'
 import localforage from 'localforage'
@@ -17,7 +18,6 @@ import App from './App.vue'
 
 store.dispatch('auth/setToken')
   .then(() => {
-  
       store.dispatch('auth/fetchUser')
   .catch(() => {
     
